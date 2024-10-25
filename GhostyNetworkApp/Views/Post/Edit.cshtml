@@ -1,0 +1,91 @@
+﻿@model GhostyNetwork.Core.Application.ViewModels.Posts.EditPostViewModel
+
+@{
+    ViewData["Title"] = "Editar Post";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">@ViewData["Title"]</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                        <div class="form-group mb-3">
+                            <label asp-for="Content" class="form-label">Contenido</label>
+                            <textarea asp-for="Content" class="form-control" rows="4" placeholder="Escribe algo interesante..." required></textarea>
+                            <span asp-validation-for="Content" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label">¿Qué deseas agregar o cambiar?</label>
+                            <select id="mediaChoice" class="form-select" onchange="toggleMediaFields()">
+                                <option value="">Selecciona una opción</option>
+                                <option value="image">Cambiar Imagen</option>
+                                <option value="video">Cambiar Enlace de Video</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-3" id="imageField" style="display: none;">
+                            <label asp-for="Image" class="form-label">Subir o Editar Imagen.</label>
+                            <input asp-for="Image" type="file" class="form-control" accept="image/*" />
+                            <small class="form-text text-muted">Selecciona una imagen si deseas cambiarla.</small>
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+
+                        @if (!string.IsNullOrEmpty(Model.VideoUrl))
+                        {
+                            <div class="form-group mb-3">
+                                <label class="form-label">Enlace de Video Actual</label>
+                                <div>
+                                    <a href="@Model.VideoUrl" target="_blank">@Model.VideoUrl</a>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="form-group mb-3" id="videoField" style="display: none;">
+                            <label asp-for="VideoUrl" class="form-label">Subir o Editar Enlace de mi Video.</label>
+                            <input asp-for="VideoUrl" type="url" class="form-control" placeholder="URL de YouTube o similar" />
+                            <small class="form-text text-muted">Agrega o cambia un enlace a un video en lugar de una imagen.</small>
+                            <span asp-validation-for="VideoUrl" class="text-danger"></span>
+                        </div>
+
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="UserId" />
+
+                        <div class="d-flex justify-content-between">
+                            <a href="@Url.Action("Index", "Post")" class="btn btn-secondary">Cancelar</a>
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        function toggleMediaFields() {
+            var mediaChoice = document.getElementById("mediaChoice").value;
+            var imageField = document.getElementById("imageField");
+            var videoField = document.getElementById("videoField");
+
+            imageField.style.display = "none";
+            videoField.style.display = "none";
+
+            if (mediaChoice === "image") {
+                imageField.style.display = "block";
+            } else if (mediaChoice === "video") {
+                videoField.style.display = "block";
+            }
+        }
+    </script>
+}

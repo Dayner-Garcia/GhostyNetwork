@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GhostyNetwork.Core.Application\GhostyNetwork.Core.Application.csproj" />
+    <ProjectReference Include="..\GhostyNetwork.Infrastructure.Persistence\GhostyNetwork.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\GhostyNetwork.Infrastructure.Shared\GhostyNetwork.Infrastructure.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

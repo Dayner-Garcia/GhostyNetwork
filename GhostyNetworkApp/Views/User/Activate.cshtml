@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Activación de cuenta";
+    Layout = "_LayoutInit";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+    <div class="card shadow-lg p-5 text-center" style="max-width: 500px; width: 100%;">
+        <h2 class="mb-4">@ViewData["Title"]</h2>
+
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-info">
+                @ViewBag.Message
+            </div>
+        }
+
+        <a href="@Url.Action("Login", "User")" class="btn btn-primary mt-3 w-100">Ir a Iniciar Sesión</a>
+    </div>
+</div>

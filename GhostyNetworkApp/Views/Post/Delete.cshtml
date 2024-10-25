@@ -1,0 +1,21 @@
+﻿@model GhostyNetwork.Core.Application.ViewModels.Posts.PostViewModel
+
+@{
+    ViewData["Title"] = "Eliminar Post";
+}
+
+<h1>Eliminar Mi Post</h1>
+
+<p>¿Estás seguro de eliminar este post?</p>
+
+<form asp-action="DeleteConfirm" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a href="@Url.Action("Index", "Post")" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

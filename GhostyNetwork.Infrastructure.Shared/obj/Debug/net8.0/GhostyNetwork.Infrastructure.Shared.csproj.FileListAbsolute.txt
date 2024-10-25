@@ -1,0 +1,17 @@
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.deps.json
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.pdb
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Core.Application.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Core.Domain.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Core.Application.pdb
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\bin\Debug\net8.0\GhostyNetwork.Core.Domain.pdb
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.AssemblyInfo.cs
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNe.4C6E1920.Up2Date
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\refint\GhostyNetwork.Infrastructure.Shared.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\GhostyNetwork.Infrastructure.Shared.pdb
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Infrastructure.Shared\obj\Debug\net8.0\ref\GhostyNetwork.Infrastructure.Shared.dll

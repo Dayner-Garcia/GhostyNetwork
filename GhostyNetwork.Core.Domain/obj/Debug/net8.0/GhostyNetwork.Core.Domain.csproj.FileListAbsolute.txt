@@ -1,0 +1,11 @@
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\bin\Debug\net8.0\GhostyNetwork.Core.Domain.deps.json
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\bin\Debug\net8.0\GhostyNetwork.Core.Domain.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\bin\Debug\net8.0\GhostyNetwork.Core.Domain.pdb
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\GhostyNetwork.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\GhostyNetwork.Core.Domain.AssemblyInfoInputs.cache
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\GhostyNetwork.Core.Domain.AssemblyInfo.cs
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\GhostyNetwork.Core.Domain.csproj.CoreCompileInputs.cache
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\GhostyNetwork.Core.Domain.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\refint\GhostyNetwork.Core.Domain.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\GhostyNetwork.Core.Domain.pdb
+C:\GhostyNetwork\GhostyNetwork\GhostyNetwork.Core.Domain\obj\Debug\net8.0\ref\GhostyNetwork.Core.Domain.dll

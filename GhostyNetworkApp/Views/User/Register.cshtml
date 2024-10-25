@@ -1,0 +1,105 @@
+﻿@model GhostyNetwork.Core.Application.ViewModels.Users.RegisterViewModel
+@{
+    ViewData["Title"] = "Registrarse";
+    Layout = "_LayoutInit";
+}
+
+<div class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+    <div class="card shadow-lg p-4" style="max-width: 600px; width: 100%;">
+        <h3 class="text-center mb-4">Crea tu cuenta</h3>
+
+        <form asp-action="Register" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="FirstName" name="FirstName" asp-for="FirstName" placeholder="Nombre" required />
+                        <label for="FirstName">Nombre</label>
+                    </div>
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="LastName" name="LastName" asp-for="LastName" placeholder="Apellido" required />
+                        <label for="LastName">Apellido</label>
+                    </div>
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="Phone" name="Phone" asp-for="Phone" placeholder="Teléfono" required />
+                    <label for="Phone">Teléfono (formato RD)</label>
+                </div>
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="Email" name="Email" asp-for="Email" placeholder="Correo electrónico" required />
+                    <label for="Email">Correo electrónico</label>
+                </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="Username" name="Username" asp-for="Username" placeholder="Nombre de usuario" required />
+                    <label for="Username">Nombre de usuario</label>
+                </div>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="Password" name="Password" asp-for="Password" placeholder="Contraseña" required />
+                        <label for="Password">Contraseña</label>
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" asp-for="ConfirmPassword" placeholder="Confirmar contraseña" required />
+                        <label for="ConfirmPassword">Confirmar contraseña</label>
+                    </div>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="ProfilePhoto" class="form-label">Foto de perfil</label>
+                <input type="file" class="form-control" id="ProfilePhoto" name="ProfilePicture" asp-for="ProfilePicture" />
+                <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-2">Registrarse</button>
+
+            @if (TempData["Message"] != null)
+            {
+                <div class="alert alert-success mt-3">
+                    @TempData["Message"]
+                </div>
+            }
+
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger mt-3">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+            }
+        </form>
+
+        <div class="text-center mt-4">
+            <a href="@Url.Action("Login", "User")" class="text-decoration-none">¿Ya tienes cuenta? <strong>Inicia sesión</strong></a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
