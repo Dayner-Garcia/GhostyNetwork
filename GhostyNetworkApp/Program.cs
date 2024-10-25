@@ -17,19 +17,11 @@ builder.Services.AddControllersWithViews();
 var connecString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connecString));
 
-// Registro de los Repositorios (Infraestructura)
 builder.Services.AddPersistenceInfrastructure(builder.Configuration);
-
-// Registro de los Servicios (Aplicación)
 builder.Services.AddAplicationLayer(builder.Configuration);
-
-// Registro de la Infraestructura compartida (Servicios adicionales como IEmailService)
 builder.Services.AddSharedInfrastructure(builder.Configuration);
-
-// Registro de IPasswordHasher
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
-
 
 // confi coookies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

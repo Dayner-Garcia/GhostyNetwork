@@ -19,4 +19,9 @@
     <ProjectReference Include="..\GhostyNetwork.Infrastructure.Shared\GhostyNetwork.Infrastructure.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\perfiles\" />
+    <Folder Include="wwwroot\images\posts\" />
+  </ItemGroup>
+
 </Project>

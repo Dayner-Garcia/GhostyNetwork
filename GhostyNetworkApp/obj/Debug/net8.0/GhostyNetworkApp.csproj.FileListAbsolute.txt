@@ -153,3 +153,4 @@ C:\GhostyNetwork\GhostyNetwork\GhostyNetworkApp\obj\Debug\net8.0\refint\GhostyNe
 C:\GhostyNetwork\GhostyNetwork\GhostyNetworkApp\obj\Debug\net8.0\GhostyNetworkApp.pdb
 C:\GhostyNetwork\GhostyNetwork\GhostyNetworkApp\obj\Debug\net8.0\GhostyNetworkApp.genruntimeconfig.cache
 C:\GhostyNetwork\GhostyNetwork\GhostyNetworkApp\obj\Debug\net8.0\ref\GhostyNetworkApp.dll
+C:\GhostyNetwork\GhostyNetwork\GhostyNetworkApp\obj\Debug\net8.0\GhostyNetworkApp.sourcelink.json

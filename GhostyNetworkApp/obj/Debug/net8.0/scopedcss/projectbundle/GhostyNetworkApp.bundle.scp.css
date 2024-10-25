@@ -6,38 +6,81 @@ a.navbar-brand[b-5cd0s2ctdy] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a.navbar-brand:hover[b-5cd0s2ctdy] {
+  color: #0056a3;
+  transform: scale(1.05);
 }
 
 a[b-5cd0s2ctdy] {
   color: #0077cc;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover[b-5cd0s2ctdy] {
+  color: #0056a3;
 }
 
 .btn-primary[b-5cd0s2ctdy] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover[b-5cd0s2ctdy] {
+  background-color: #155a9b;
+  border-color: #134f87;
+  transform: translateY(-2px);
 }
 
 .nav-pills .nav-link.active[b-5cd0s2ctdy], .nav-pills .show > .nav-link[b-5cd0s2ctdy] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.nav-pills .nav-link.active:hover[b-5cd0s2ctdy] {
+  background-color: #155a9b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .border-top[b-5cd0s2ctdy] {
   border-top: 1px solid #e5e5e5;
+  transition: border-color 0.3s ease-in-out;
 }
 .border-bottom[b-5cd0s2ctdy] {
   border-bottom: 1px solid #e5e5e5;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.border-top:hover[b-5cd0s2ctdy], .border-bottom:hover[b-5cd0s2ctdy] {
+  border-color: #d4d4d4;
 }
 
 .box-shadow[b-5cd0s2ctdy] {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.box-shadow:hover[b-5cd0s2ctdy] {
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
 
 button.accept-policy[b-5cd0s2ctdy] {
   font-size: 1rem;
   line-height: inherit;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button.accept-policy:hover[b-5cd0s2ctdy] {
+  background-color: #0077cc;
+  transform: scale(1.05);
 }
 
 .footer[b-5cd0s2ctdy] {
@@ -47,3 +90,4 @@ button.accept-policy[b-5cd0s2ctdy] {
   white-space: nowrap;
   line-height: 60px;
 }
+
